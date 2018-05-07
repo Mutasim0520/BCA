@@ -17,6 +17,8 @@ Route::get('/history','IndexController@showHistory')->name('user.history');
 Route::get('/sponsorship','IndexController@showSponsorship')->name('user.sponsorship');
 Route::get('/visa-application','IndexController@showVisaApplication')->name('user.visa_application');
 Route::get('/travel-support','IndexController@showTravelSupport')->name('user.travel_support');
+Route::get('/committee/{name}','IndexController@showCommittee');
+Route::get('/programs','IndexController@showPrograms')->name('user.program');
 
 Route::get('/hall/administration','IndexController@showHallAdministration')->name('user.hall.administration');
 Route::get('/hall/role/of/honors','IndexController@showRoleOfHonors')->name('user.role.honors');

@@ -19,6 +19,7 @@
             <div class="container">
                 <div class="row">
                     <div class="service-style-2-wrappwe">
+                        @if(sizeof($notice)>0)
                         @foreach($notice as $item)
                             <div class="col-md-4 col-sm-6">
                             <div class="service-style-item">
@@ -49,6 +50,9 @@
                             </div>
                         </div>
                         @endforeach
+                        @else
+                            <p>No Announcement Found</p>
+                        @endif
                     </div>
                 </div>
             </div>

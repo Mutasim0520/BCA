@@ -62,14 +62,14 @@
                                     </li>
                                     <li><a href="javascript:void(0);">Committee <span><i class="fa fa-sort-desc" aria-hidden="true"></i></span></a>
                                         <ul class="dropdown">
-                                            <li><a href="{{Route('user.history')}}"><i class="fa fa-caret-right"></i>Organizing Committee</a></li>
-                                            <li><a href="{{Route('user.hall.administration')}}"><i class="fa fa-caret-right"></i>Executive Committee</a></li>
-                                            <li><a href="{{Route('user.role.honors')}}"><i class="fa fa-caret-right"></i>Advisory Committee</a></li>
-                                            <li><a href="{{Route('user.role.honors')}}"><i class="fa fa-caret-right"></i>Sub-Committees</a></li>
+                                            <li><a href="/committee/organizing"><i class="fa fa-caret-right"></i>Organizing Committee</a></li>
+                                            <li><a href="/committee/executive"><i class="fa fa-caret-right"></i>Executive Committee</a></li>
+                                            <li><a href="/committee/advisory"><i class="fa fa-caret-right"></i>Advisory Committee</a></li>
+                                            <li><a href="/committee/sub"><i class="fa fa-caret-right"></i>Sub-Committees</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{{Route('user.notice')}}">Program</a></li>
-                                    <li><a href="{{Route('user.events')}}">Announcement</a></li>
+                                    <li><a href="{{Route('user.program')}}">Program</a></li>
+                                    <li><a href="{{Route('user.notice')}}">Announcement</a></li>
                                     <li><a href="{{Route('user.news')}}">News</a></li>
                                     <li><a href="{{Route('user.contact')}}">Contact</a></li>
                                     <li><a href="{{Route('login')}}">Login</a></li>
