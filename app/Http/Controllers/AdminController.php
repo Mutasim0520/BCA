@@ -42,10 +42,10 @@ class AdminController extends Controller
         ));
         $Committee = new Committee();
         $Committee->name = $request->name;
-        $Committee->department = trim($request->deparment);
+        $Committee->department = trim($request->department);
         $Committee->designation = trim($request->designation);
         $Committee->university = trim($request->university);
-        $Committee->meta = trim($request->meta);
+        $Committee->meta = trim($request->meta_info);
         $Committee->committee = $request->committee;
 
         if($request->hasFile('pic')){
@@ -57,6 +57,46 @@ class AdminController extends Controller
         $Committee->save();
         Session::flash('success_administration_post','Successfully saved');
         return redirect(Route('admin.dashboard'));
+    }
+
+    public function showEditCommitteeMemberForm(Request $request){
+        $member = Committee::find($request->id);
+        return view('admin.edits.editCommitteeMemberForm',['member' => $member]);
+    }
+
+    public function editCommitteeMember(Request $request){
+        $this->validate($request,array(
+            'name' => 'required|max:255',
+            'designation' => 'required|max:255',
+            'university' => 'required|max:255',
+            'department' => 'required|max:255',
+            'committee' => 'required'
+        ));
+        $Committee = Committee::find($request->id);
+        $Committee->name = $request->name;
+        $Committee->department = trim($request->department);
+        $Committee->designation = trim($request->designation);
+        $Committee->university = trim($request->university);
+        $Committee->meta = trim($request->meta_info);
+        $Committee->committee = $request->committee;
+
+        if($request->hasFile('pic')){
+            $file = $request->file('pic');
+            $fileName = time().$request->file('pic')->getClientOriginalName();
+            $file->move(public_path('/uploads/images'), $fileName);
+            $Committee->photo = $fileName;
+        }
+        $Committee->save();
+        Session::flash('success_edit','Successfully Edited');
+        return redirect(Route('admin.dashboard'));
+    }
+
+    public function deleteCommitteeMember(Request $request){
+        $member = Committee::find($request->id);
+        $member->delete();
+        Session::flash('success_delete','Successfully Deleted');
+        return redirect(Route('admin.dashboard'));
+
     }
 
 //    public function showAddnewsForm(){

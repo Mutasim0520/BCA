@@ -4,7 +4,7 @@
     <div class="col-lg-12">
         <div class="ibox float-e-margins">
             <div class="ibox-title">
-                <h5>Edit Notice</h5>
+                <h5>Edit Announcement</h5>
             </div>
             <div class="ibox-content">
                 <form method="post" enctype="multipart/form-data" action="/admin/edit/notice/{{$notice->id}}">

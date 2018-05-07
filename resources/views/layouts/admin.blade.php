@@ -47,8 +47,8 @@
                     <a href="{{Route('admin.dashboard')}}"><i class="fa fa-diamond"></i> <span class="nav-label">Home</span></a>
                     <a href="{{Route('admin.add.committee')}}"><i class="fa fa-diamond"></i> <span class="nav-label">Add Committee Member</span></a>
                     {{--<a href="{{Route('admin.hallAdministration')}}"><i class="fa fa-diamond"></i> <span class="nav-label">Add Hall Administration</span></a>--}}
-                    {{--<a href="{{Route('admin.notice.add')}}"><i class="fa fa-diamond"></i> <span class="nav-label">Add Notice</span></a>--}}
-                    {{--<a href="{{Route('admin.news.add')}}"><i class="fa fa-diamond"></i> <span class="nav-label">Add News</span></a>--}}
+                    <a href="{{Route('admin.notice.add')}}"><i class="fa fa-diamond"></i> <span class="nav-label">Add Announcement</span></a>
+                    <a href="{{Route('admin.news.add')}}"><i class="fa fa-diamond"></i> <span class="nav-label">Add News</span></a>
                     {{--<a href="{{Route('admin.events.add')}}"><i class="fa fa-diamond"></i> <span class="nav-label">Add Events</span></a>--}}
                     {{--<a href="{{Route('admin.student.form')}}"><i class="fa fa-diamond"></i> <span class="nav-label">Students Form</span></a>--}}
 

@@ -4,7 +4,7 @@
     <div class="col-lg-12">
         <div class="ibox float-e-margins">
             <div class="ibox-title">
-                <h5>Add Notice</h5>
+                <h5>Add Announcement</h5>
             </div>
             <div class="ibox-content">
                 <form method="post" enctype="multipart/form-data" action="{{Route('admin.store.notice')}}">
