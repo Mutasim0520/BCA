@@ -16,7 +16,7 @@
                             {{csrf_field()}}
                             <div class=" col-md-12 footer">
                                 <div class="form-group">
-                                    <input id="name" type="text" placeholder="Name" class="form-control" name="name" required>
+                                    <input id="name" type="text" placeholder="Username" class="form-control" name="name" required>
                                     @if ($errors->has('name'))
                                     <span class="help-block">
                                     <strong>{{ $errors->first('name') }}</strong>
@@ -30,9 +30,6 @@
                                     <strong>{{ $errors->first('email') }}</strong>
                                     </span>
                                     @endif
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" placeholder="Phone" class="form-control" name="phone">
                                 </div>
                                 <div class="form-group">
                                     <input type="password" placeholder="Password" class="form-control" id="password" name="password" required>

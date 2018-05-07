@@ -324,7 +324,7 @@
   float: none;
 }
 .mean-container .mean-bar {
-  top: 22%;
+  top: 6%;
 }
 .mean-container .mean-nav {
   margin-left: 28px;
@@ -333,9 +333,6 @@
 .slide-text h1 {
   font-size: 27px;
   letter-spacing: 1px;
-}
-.slide-text h2 {
-  font-size: 14px;
 }
 .slide-text {
   width: 100%;

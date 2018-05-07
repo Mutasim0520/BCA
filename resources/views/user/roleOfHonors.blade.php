@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="banner-wrapper">
-                        <h2>Former Provosts</h2>
+                        <h2></h2>
                     </div>
                 </div>
             </div>

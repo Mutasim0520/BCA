@@ -43,11 +43,10 @@ li {
 }
 
 p {
-    color: #7e7e7e;
     font-size: 14px;
-    font-weight: lighter;
     line-height: 24px;
     margin-bottom: 6px;
+    text-align: justify;
 }
 
 .container-fluid {
@@ -1388,7 +1387,6 @@ display: none;
   font-size: 14px;
   letter-spacing: 1px;
   margin: 0 10px;
-  text-transform: uppercase;
 }
 .main-menu > li.active a {
   color: #3a6ee8;
@@ -1420,7 +1418,6 @@ display: none;
   font-size: 13px;
   letter-spacing: 2px;
   padding: 0 15px;
-  text-transform: uppercase;
   transition: all 0.3s ease-in-out 0s;
 }
 
@@ -1595,7 +1592,7 @@ display: none;
 
 .slide-text h2 {
   color: #fff;
-  font-size: 22px;
+  font-size: 16px;
   letter-spacing: 1px;
   margin-bottom: 20px;
 }

@@ -34,7 +34,7 @@
                                     </div>
                                     <div class="address-content">
                                         <h3>Address</h3>
-                                        <p>Jagannath Hall, University of Dhaka</p>
+                                        <p>University of Dhaka</p>
                                     </div>
                                 </div>
                             </div>
@@ -68,6 +68,6 @@
     </div>
 
     <div class="map">
-        <iframe style="width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3652.4979689297684!2d90.39481939759219!3d23.7296155246862!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x45bf07fa05b835db!2sJagannath+Hall!5e0!3m2!1sen!2sbd!4v1521886006089" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe style="width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14610.06453649538!2d90.39886416878663!3d23.728967286683556!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8e90a449e4f%3A0xb7092a9c25197fa4!2sUniversity+of+Dhaka!5e0!3m2!1sen!2sbd!4v1525680627067" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 @endsection

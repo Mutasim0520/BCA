@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Jagannath Hall</title>
+    <title>Bangladesh Crystallographic Association</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- All Stylesheet -->
     <link rel="stylesheet" href="/css/user/element.css">
@@ -38,50 +38,12 @@
     <!-- Start Header Style Section -->
     <header>
         <div class="header-area">
-            <div class="header-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12">
-                            <ul class="header-top-left">
-                                <li><a href="#"><i class="fa fa-envelope-o"></i>abc@gmail.com</a></li>
-                                <li><a href="#"><i class="fa fa-phone"></i> +880 163 123 7884</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3 col-sm-12">
-                            <ul class="social-bookmarks">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                                <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-5 col-sm-12">
-                            <ul class="social-bookmarks">
-                                @if(Auth::user())
-                                    <li><a href="javascript:void(0);">{{Auth::user()->name}}</a></li>
-                                    <li> <a href="{{ url('/logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
-                                            <i class="fa fa-sign-out"></i><span class="">Sign Out</span>
-                                        </a>
-                                        <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form></li>
-
-                                @else
-                                    <li><a href="{{Route('login')}}">Login</a></li>
-                                    <li><a href="{{Route('register')}}">Register</a></li>
-                                @endif
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- End header top area -->
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-4">
                         <div class="logo">
-                            <a href="/"><img style="height: 76px; margin-top: 10px;" src="/img/logo.png"></a>
+                            <a href="/"><img style="height: 76px; margin-top: 10px;" src="/img/logo.PNG"></a>
                         </div>
                     </div>
                     <div class="col-md-8 col-sm-8 hidden-xs hidden-sm mainmenu-main-wrapper">
@@ -92,25 +54,26 @@
                                     <li><a href="javascript:void(0);">About Us <span><i class="fa fa-sort-desc" aria-hidden="true"></i></span></a>
                                         <ul class="dropdown">
                                             <li><a href="{{Route('user.history')}}"><i class="fa fa-caret-right"></i>History</a></li>
-                                            <li><a href="{{Route('user.hall.administration')}}"><i class="fa fa-caret-right"></i>Hall Administration</a></li>
-                                            <li><a href="{{Route('user.role.honors')}}"><i class="fa fa-caret-right"></i>Roll of Honour</a></li>
+                                            <li><a href="{{Route('user.hall.administration')}}"><i class="fa fa-caret-right"></i>Sponsorship</a></li>
+                                            <li><a href="{{Route('user.role.honors')}}"><i class="fa fa-caret-right"></i>Travel Support</a></li>
+                                            <li><a href="{{Route('user.role.honors')}}"><i class="fa fa-caret-right"></i>Visa Application</a></li>
+                                            <li><a href="{{Route('user.role.honors')}}"><i class="fa fa-caret-right"></i>Travel Info</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{{Route('user.notice')}}">Notice</a></li>
-                                    <li><a href="{{Route('user.events')}}">Events</a></li>
+                                    <li><a href="javascript:void(0);">Committee <span><i class="fa fa-sort-desc" aria-hidden="true"></i></span></a>
+                                        <ul class="dropdown">
+                                            <li><a href="{{Route('user.history')}}"><i class="fa fa-caret-right"></i>Organizing Committee</a></li>
+                                            <li><a href="{{Route('user.hall.administration')}}"><i class="fa fa-caret-right"></i>Executive Committee</a></li>
+                                            <li><a href="{{Route('user.role.honors')}}"><i class="fa fa-caret-right"></i>Advisory Committee</a></li>
+                                            <li><a href="{{Route('user.role.honors')}}"><i class="fa fa-caret-right"></i>Sub-Committees</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="{{Route('user.notice')}}">Program</a></li>
+                                    <li><a href="{{Route('user.events')}}">Announcement</a></li>
                                     <li><a href="{{Route('user.news')}}">News</a></li>
-                                    <li><a href="{{Route('user.student.form')}}">Student Form</a></li>
                                     <li><a href="{{Route('user.contact')}}">Contact</a></li>
-                                </ul>
-                                <ul class="header-action">
-                                    <li class="search-icon">
-                                        <i class="fa fa-search"></i>
-                                    </li>
-                                    <li class="search-box">
-                                        <form action="">
-                                            <input type="text" class="search-option" placeholder="SEARCH HARE">
-                                        </form>
-                                    </li>
+                                    <li><a href="{{Route('user.student.form')}}">Login</a></li>
+
                                 </ul>
                             </nav>
                         </div>
@@ -118,19 +81,28 @@
                     <div class="mobile-menu-area">
                         <div class="mobile-menu-custom">
                             <ul>
-                                <li class="active"><a href="{{Route('user.index')}}">Home</a></li>
-                                <li class=""><a href="javascript:void(0);">About Us</a>
-                                    <ul>
-                                        <li><a href="{{Route('user.history')}}"><i class="fa fa-caret-right"></i>History</a></li>
-                                        <li><a href="{{Route('user.hall.administration')}}"><i class="fa fa-caret-right"></i>Hall Administration</a></li>
-                                        <li><a href="{{Route('user.role.honors')}}"><i class="fa fa-caret-right"></i>Roll of Honour</a></li>
+                                <li><a href="{{Route('user.index')}}">Home</a></li>
+                                <li><a href="javascript:void(0);">About Us <span><i class="fa fa-sort-desc" aria-hidden="true"></i></span></a>
+                                    <ul class="dropdown">
+                                        <li><a href="{{Route('user.history')}}"><i class="fa fa-caret-right"></i>Organizing Committee</a></li>
+                                        <li><a href="{{Route('user.hall.administration')}}"><i class="fa fa-caret-right"></i>Executive Committee</a></li>
+                                        <li><a href="{{Route('user.role.honors')}}"><i class="fa fa-caret-right"></i>Advisory Committee</a></li>
+                                        <li><a href="{{Route('user.role.honors')}}"><i class="fa fa-caret-right"></i>Sub-Committees</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="{{Route('user.notice')}}">Notice</a></li>
-                                <li><a href="{{Route('user.events')}}">Events</a></li>
+                                <li><a href="javascript:void(0);">Committee <span><i class="fa fa-sort-desc" aria-hidden="true"></i></span></a>
+                                    <ul class="dropdown">
+                                        <li><a href="{{Route('user.history')}}"><i class="fa fa-caret-right"></i>Organizing Committee</a></li>
+                                        <li><a href="{{Route('user.hall.administration')}}"><i class="fa fa-caret-right"></i>Executive Committee</a></li>
+                                        <li><a href="{{Route('user.role.honors')}}"><i class="fa fa-caret-right"></i>Advisory Committee</a></li>
+                                        <li><a href="{{Route('user.role.honors')}}"><i class="fa fa-caret-right"></i>Sub-Committees</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{{Route('user.notice')}}">Program</a></li>
+                                <li><a href="{{Route('user.events')}}">Announcement</a></li>
                                 <li><a href="{{Route('user.news')}}">News</a></li>
-                                <li><a href="{{Route('user.student.form')}}">Student Form</a></li>
                                 <li><a href="{{Route('user.contact')}}">Contact</a></li>
+                                <li><a href="{{Route('user.student.form')}}">Login</a></li>
                             </ul>
                         </div>
                     </div>
@@ -188,7 +160,7 @@
                             <div class="widget-item">
                                 <h2>Get In Tuch</h2>
                                 <ul class="widget-address">
-                                    <li><a href="#"><i class="fa fa-map-marker m-5"></i>Jagannath Hall, University of Dhaka</a></li>
+                                    <li><a href="#"><i class="fa fa-map-marker m-5"></i> BCA, University of Dhaka</a></li>
                                     <li><a href="#"><i class="fa fa-phone m-5"></i> +6681 631 237 884</a></li>
                                     <li><a href="#"><i class="fa fa-envelope m-5"></i> info@example.com</a></li>
                                 </ul>
@@ -203,7 +175,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="copyright">
-                            <p>Copyright 2017 &copy; Jagannath Hall. All Rights Reserved. </p>
+                            <p>Copyright 2017 &copy; BCA. All Rights Reserved. </p>
                         </div>
                     </div>
                     <div class="col-md-6">
