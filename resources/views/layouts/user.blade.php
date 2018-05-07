@@ -72,7 +72,7 @@
                                     <li><a href="{{Route('user.events')}}">Announcement</a></li>
                                     <li><a href="{{Route('user.news')}}">News</a></li>
                                     <li><a href="{{Route('user.contact')}}">Contact</a></li>
-                                    <li><a href="{{Route('user.student.form')}}">Login</a></li>
+                                    <li><a href="{{Route('login')}}">Login</a></li>
 
                                 </ul>
                             </nav>
