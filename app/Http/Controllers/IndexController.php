@@ -49,15 +49,27 @@ class IndexController extends Controller
     }
 
     public function showIndex(){
-        $today = date('Y-m-d');
-        $upcomming_events = Events::with('events_image')->where('date','>=',$today)->orderBy('id','DESC')->get();
-        $latest_news = News::with('broadcasts_image')->orderBy('id','DESC')->get();
-        $notice = Notice::orderBy('id','DESC')->get();
-        return view('user.index',['events' =>$upcomming_events, 'news' => $latest_news , 'notice' => $notice]);
+        return view('user.index');
     }
 
-    public function showAboutUs(){
-        return view('user.aboutUs');
+    public function showSponsorship(){
+        return view('user.sponsorship');
+    }
+
+    public function showTravelSupport(){
+        return view('user.travelSupport');
+    }
+
+    public function showTravelInfo(){
+        return view('user.TravelInfo');
+    }
+
+    public function showVisaApplication(){
+        return view('user.visaApplication');
+    }
+
+    public function showHistory(){
+        return view('user.history');
     }
 
     public function showHallAdministration(){

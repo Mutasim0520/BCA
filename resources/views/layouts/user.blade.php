@@ -54,10 +54,10 @@
                                     <li><a href="javascript:void(0);">About Us <span><i class="fa fa-sort-desc" aria-hidden="true"></i></span></a>
                                         <ul class="dropdown">
                                             <li><a href="{{Route('user.history')}}"><i class="fa fa-caret-right"></i>History</a></li>
-                                            <li><a href="{{Route('user.hall.administration')}}"><i class="fa fa-caret-right"></i>Sponsorship</a></li>
-                                            <li><a href="{{Route('user.role.honors')}}"><i class="fa fa-caret-right"></i>Travel Support</a></li>
-                                            <li><a href="{{Route('user.role.honors')}}"><i class="fa fa-caret-right"></i>Visa Application</a></li>
-                                            <li><a href="{{Route('user.role.honors')}}"><i class="fa fa-caret-right"></i>Travel Info</a></li>
+                                            <li><a href="{{Route('user.sponsorship')}}"><i class="fa fa-caret-right"></i>Sponsorship</a></li>
+                                            <li><a href="{{Route('user.travel_support')}}"><i class="fa fa-caret-right"></i>Travel Support</a></li>
+                                            <li><a href="{{Route('user.visa_application')}}"><i class="fa fa-caret-right"></i>Visa Application</a></li>
+                                            <li><a href="{{Route('user.travel_info')}}"><i class="fa fa-caret-right"></i>Travel Info</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="javascript:void(0);">Committee <span><i class="fa fa-sort-desc" aria-hidden="true"></i></span></a>
