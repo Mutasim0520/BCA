@@ -35,8 +35,10 @@
                                             <img class="img-responsive" src="/uploads/images/{{$path}}" alt="">
                                         </div>
                                         <div class="team-content">
+                                            <h2 class="position">{{$item->designation}} of BCA</h2>
                                             <h3>{{$item->name}}</h3>
-                                            <span class="position">{{$item->designation}}</span>
+                                            <h5>Department</h5>
+                                            <h5>University</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -49,6 +51,5 @@
                 </div>
             </div>
         </div>
-        <!-- End creative team -->
     </div>
 @endsection

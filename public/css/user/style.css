@@ -1665,8 +1665,6 @@ display: none;
     position: relative;
 }
 
-.home-two-slider {}
-
 .home-two-slider .slide-text h1 {
     color: #fff;
 }
@@ -2362,7 +2360,6 @@ z-index: 2;
     11. TEAM SECTION STYLE
 ========================================*/
 .team-wrapper {
-  height: 420px;
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -3001,7 +2998,6 @@ z-index: 2;
     padding: 30px 0;
 }
 
-.pagination-area .pagination li {}
 
 .pagination-area .pagination li.active > a {
   background: #3a6ee8 none repeat scroll 0 0;
@@ -4310,4 +4306,4 @@ textarea.text-area:focus {
 
 .header-top a {
     color: white !important;
-}
+}  
