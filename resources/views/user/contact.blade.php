@@ -34,7 +34,7 @@
                                     </div>
                                     <div class="address-content">
                                         <h3>Address</h3>
-                                        <p>University of Dhaka</p>
+                                        <p>Dhaka, Bangladesh</p>
                                     </div>
                                 </div>
                             </div>
@@ -45,7 +45,7 @@
                                     </div>
                                     <div class="address-content">
                                         <h3>Phone</h3>
-                                        <p>+1 916-8752-2351</p>
+                                        <p>+8801552421909</p>
                                     </div>
                                 </div>
                             </div>
@@ -56,7 +56,7 @@
                                     </div>
                                     <div class="address-content">
                                         <h3>Email</h3>
-                                        <p>abc@gmail.com</p>
+                                        <p>altaf@du.ac.bd</p>
                                     </div>
                                 </div>
                             </div>
@@ -68,6 +68,6 @@
     </div>
 
     <div class="map">
-    <iframe style="width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14610.06453649538!2d90.39886416878663!3d23.728967286683556!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8e90a449e4f%3A0xb7092a9c25197fa4!2sUniversity+of+Dhaka!5e0!3m2!1sen!2sbd!4v1525680627067" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe style="width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116834.19351985685!2d90.34927603021828!3d23.780573256485233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1525759394445" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 @endsection

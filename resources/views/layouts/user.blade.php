@@ -139,9 +139,9 @@
                                 <ul class="widget-link">
                                     <li><a href="{{Route('user.history')}}"> <i aria-hidden="true" class="fa fa-long-arrow-right"></i>About Us</a></li>
                                     <li><a href="{{Route('user.contact')}}"><i aria-hidden="true" class="fa fa-long-arrow-right"></i>Contact Us</a></li>
-                                    <li><a href="{{Route('user.notice')}}"><i aria-hidden="true" class="fa fa-long-arrow-right"></i>Notice</a></li>
+                                    <li><a href="{{Route('user.program')}}"><i aria-hidden="true" class="fa fa-long-arrow-right"></i>Program</a></li>
+                                    <li><a href="{{Route('user.notice')}}"><i aria-hidden="true" class="fa fa-long-arrow-right"></i>Announcement</a></li>
                                     <li><a href="{{Route('user.news')}}"><i aria-hidden="true" class="fa fa-long-arrow-right"></i>News</a></li>
-                                    <li><a href="{{Route('user.events')}}"><i aria-hidden="true" class="fa fa-long-arrow-right"></i>Events</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -150,9 +150,9 @@
                                 <h2>Uesful Links</h2>
                                 <ul class="widget-link">
                                     <li><a href="http://du.ac.bd/"> <i aria-hidden="true" class="fa fa-long-arrow-right"></i>University of Dhaka</a></li>
-                                    <li><a href="http://jobs.du.ac.bd/"> <i aria-hidden="true" class="fa fa-long-arrow-right"></i>Jobs</a></li>
-                                    <li><a href="https://duaa-bd.org/"><i aria-hidden="true" class="fa fa-long-arrow-right"></i>Alumni Association</a></li>
-                                    <li><a href="http://www.library.du.ac.bd/"><i aria-hidden="true" class="fa fa-long-arrow-right"></i>Library</a></li>
+                                    <li><a href="http://www.discoverybangladesh.com/"> <i aria-hidden="true" class="fa fa-long-arrow-right"></i>Discover Bangladesh</a></li>
+                                    <li><a href="http://www.parjatan.gov.bd/"><i aria-hidden="true" class="fa fa-long-arrow-right"></i>Bangladesh Parjatan Corporation</a></li>
+                                    <li><a href="https://bangladesh.gov.bd/index.php"><i aria-hidden="true" class="fa fa-long-arrow-right"></i>Goverment of Bangladesh</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -160,9 +160,8 @@
                             <div class="widget-item">
                                 <h2>Get In Tuch</h2>
                                 <ul class="widget-address">
-                                    <li><a href="#"><i class="fa fa-map-marker m-5"></i> BCA, University of Dhaka</a></li>
                                     <li><a href="#"><i class="fa fa-phone m-5"></i> +6681 631 237 884</a></li>
-                                    <li><a href="#"><i class="fa fa-envelope m-5"></i> info@example.com</a></li>
+                                    <li><a href="#"><i class="fa fa-envelope m-5"></i>altaf@du.ac.bd</a></li>
                                 </ul>
                             </div>
                         </div>

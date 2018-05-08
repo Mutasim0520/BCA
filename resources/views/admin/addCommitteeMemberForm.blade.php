@@ -37,8 +37,18 @@
                             <div class="col-sm-10">
                                 <select class="form-control" name="designation" required>
                                     <option value="">Select Designation</option>
-                                    <option value="provost">Provost</option>
-                                    <option value="House Tutor">House Tutor</option>
+                                    <option value="Chairman">Chairman</option>
+                                    <option value="Organizing Secretary">Organizing Secretary</option>
+                                    <option value="Treasurer">Treasurer</option>
+                                    <option value="Member">Member</option>
+                                    <option value="President">President</option>
+                                    <option value="Vice-President">Vice-President</option>
+                                    <option value="General Secretary">General Secretary</option>
+                                    <option value="Joint-Secretary">Joint-Secretary</option>
+                                    <option value="Executive Member">Executive Member</option>
+                                    <option value="Patron">Patron</option>
+                                    <option value="Advisory Committee">Advisory Committee</option>
+                                    <option value="Joint-Secretary">Joint-Secretary</option>
                                 </select>
                             </div>
                         </div>

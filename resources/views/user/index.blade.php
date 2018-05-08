@@ -10,7 +10,7 @@
                            <div class="slide-text">
                                 <h2>The Executive Committee of BCA has decided to hold 5th Conference of the Bangladesh Crystallographic Association on 25-26 January 2019.</h2>
                                 <p style="text-align: center;">
-                                    <a href="/download/Design.doc" style="margin-bottom: 10px;" class="button active about-readmore">View Details</a>
+                                    <a href="/download/5th_BCA_Conf.doc" style="margin-bottom: 10px;" class="button active about-readmore">View Details</a>
                                 </p>
                             </div>
                         </div>
@@ -22,7 +22,7 @@
                     <div class="row">
                         <div class="slider-content-area">
                             <div class="slide-text">
-                                <h2>Content</h2>
+                                <h2>Like other countries of the World, Bangladesh also organized events to promote crystallography</h2>
                             </div>
                         </div>
                     </div>
@@ -33,7 +33,7 @@
                     <div class="row">
                         <div class="slider-content-area">
                            <div class="slide-text">
-                                <h2>Content</h2>
+                                <h2>Bangladesh is one of the member countries of AsCA and has been participating in all conferences and other events of AsCA and also in regional and international crystallographic related conferences</h2>
                             </div>
                         </div>
                     </div>
@@ -70,8 +70,10 @@
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-4">
-                            <div class="call-to-action-btn-details" style="text-align: center; margin-top: 32px;">
-                                <a href="#" class="button active ">Read More details</a>
+                            <div class="call-to-action-btn-details" style="text-align: center;">
+                                <p style="text-align: center;">
+                                    <a href="/download/5th_BCA_Conf.doc" style="margin-bottom: 10px;" class="button active about-readmore">View Details</a>
+                                </p>
                             </div>
                         </div>
                     </div>
