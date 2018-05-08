@@ -74,7 +74,7 @@ class IndexController extends Controller
     }
 
     public function showCommittee(Request $request){
-        $members = Committee::where('committee',$request->name)->paginate(6);
+        $members = Committee::where('committee',$request->name)->orderBy('priority','ASC')->paginate(6);
         return view('user.showCommitteeMembers',['members'=>$members,'committee' => $request->name]);
     }
 
@@ -123,6 +123,6 @@ class IndexController extends Controller
         $events = Events::with('events_image')->orderBy('id','DESC')->paginate(6);
         return view('user.events',['events' => $events]);
     }
-    
+
 
 }

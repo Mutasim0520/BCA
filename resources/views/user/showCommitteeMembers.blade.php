@@ -37,8 +37,8 @@
                                         <div class="team-content">
                                             <h2 class="position">{{$item->designation}} of BCA</h2>
                                             <h3>{{$item->name}}</h3>
-                                            <h5>Department</h5>
-                                            <h5>University</h5>
+                                            <small>{{$item->department}}</small><br>
+                                            <small>{{$item->university}}</small>
                                         </div>
                                     </div>
                                 </div>
