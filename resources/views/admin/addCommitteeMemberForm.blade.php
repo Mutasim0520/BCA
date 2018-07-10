@@ -48,15 +48,20 @@
                                     <option value="Executive Member">Executive Member</option>
                                     <option value="Patron">Patron</option>
                                     <option value="Advisory Committee">Advisory Committee</option>
-                                    <option value="Joint-Secretary">Joint-Secretary</option>
                                 </select>
                             </div>
                         </div>
+                            <div class="form-group"><label class="col-sm-2 control-label">Priority *1</label>
+                                <div class="col-sm-10"><input type="number" class="form-control" placeholder="" name="priority" min="1" required></div>
+                            </div>
                             <div class="form-group"><label class="col-sm-2 control-label">Photo</label>
                                 <div class="col-sm-10"><input type="file" class="form-control" placeholder="" name="pic" accept="image/*"></div>
                             </div>
                             <div class="form-group"><label class="col-sm-2 control-label"></label>
                                 <div class="col-sm-10"><button type="submit" class="btn btn-w-m btn-primary">Submit</button></div>
+                            </div>
+                            <div>
+                                <small>1.Please give a number between 1-10. 1 is the highest priority 10 is the lowest. In a committee this priority will determine which members will be shown first from the committee in the web page.</small>
                             </div>
                         </form>
                     </fieldset>
