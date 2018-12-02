@@ -10,7 +10,7 @@
                            <div class="slide-text">
                                 <h2>The Executive Committee of BCA has decided to hold 5th Conference of the Bangladesh Crystallographic Association on 25-26 January 2019.</h2>
                                 <p style="text-align: center;">
-                                    <a href="/download/5th_BCA_Conf.doc" style="margin-bottom: 10px;" class="button active about-readmore">View Details</a>
+                                    <a href="{{Route('download')}}" style="margin-bottom: 10px;" class="button active about-readmore">View Details</a>
                                 </p>
                             </div>
                         </div>
