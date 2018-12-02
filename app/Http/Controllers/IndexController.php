@@ -15,11 +15,27 @@ use Auth;
 use App\Notice as Notice;
 use Session;
 use App\User as User;
+use File;
+use Storage;
 
 class IndexController extends Controller
 {
-    public function downloadFile(Request $request){
-        $file_path = public_path() .'/uploads/files/'. $request->filename;
+
+    public function getCompanyProfile($index){
+        $info = explode(PHP_EOL,Storage::disk('public')->get('company.txt'));
+        foreach ($info as $item) {
+            if(preg_match("/$index/",$item)){
+                $replace = $index."=";
+                $str = trim(preg_replace("/$replace/",'',$item));
+                return $str;
+            }
+        }
+    }
+
+
+    public function downloadFile(){
+        $file_name = $this->getCompanyProfile("file_name");
+        $file_path = public_path() .'/uploads/files/'. $file_name;
         if (file_exists($file_path))
         {
             // Send Download

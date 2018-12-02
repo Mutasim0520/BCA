@@ -1,6 +1,31 @@
 @extends('layouts.admin')
 @section('body')
     <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>File</h5>
+                </div>
+                <div class="ibox-content">
+                    <form enctype="multipart/form-data" action="{{Route('admin.uploadFile')}}" method="post">
+                        {{csrf_field()}}
+                        <fieldset class="form-horizontal">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Upload A New File</label>
+                                <div class="col-sm-7">
+                                    <input type="file" name="file_name" class="form-control" required>
+                                </div>
+                                <div class="col-sm-3">
+                                    <input type="submit" class="form-control" value="Upload">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
             <div class="col-lg-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">

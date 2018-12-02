@@ -38,12 +38,13 @@ Route::group(['middleware' => 'auth'], function (){
     Route::post('/edti/student-form/{id}','IndexController@editStudentForm');
 });
 
-Route::get('/download/{filename}','IndexController@downloadFile');
+Route::get('/download','IndexController@downloadFile')->name('download');
 
 Auth::routes();
 Route::post('/admin/login','Auth\AdminLoginController@login')->name('admin.login.submit');
 Route::get('/admin/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
 Route::group(['prefix' => 'admin',  'middleware' => 'auth:admin'], function () {
+    Route::post('/upload/file','AdminController@uploadFile')->name('admin.uploadFile');
     Route::get('/dashboard', 'AdminController@ShowDashboard')->name('admin.dashboard');
 
     Route::get('/add/committee-member', 'AdminController@showAddCommitteeMemberForm')->name('admin.add.committee');
@@ -63,44 +64,6 @@ Route::group(['prefix' => 'admin',  'middleware' => 'auth:admin'], function () {
     Route::get('/edit/notice/{id}','AdminController@showEditNoticeForm');
     Route::post('/edit/notice/{id}','AdminController@EditNoticeForm');
     Route::get('/delete/notice/{id}','AdminController@deletetNotice');
-
-
-//    Route::get('/edit/student/form/{id}', 'AdminController@ShowStudentsEditForm');
-//    Route::get('/delete/student/form/{id}', 'AdminController@deleteStudent');
-//    Route::post('/edit/student/form/{id}', 'AdminController@updateStudentForm');
-//
-//    Route::get('/add/role/of/honors', 'AdminController@ShowRoleOfHonorsForm')->name('admin.roleOfHonors');
-//    Route::post('/add/role/of/honors', 'AdminController@storeRoleOfHonorsForm')->name('admin.store.roleOfHonors');
-//
-//    Route::get('/add/hall/administration', 'AdminController@ShowHallAdminstrationForm')->name('admin.hallAdministration');
-//    Route::post('/add/hall/administration', 'AdminController@storeHallAdminstrationForm')->name('admin.store.hallAdministration');
-//
-
-//
-//    Route::get('/add/events','AdminController@showAddeventsForm')->name('admin.events.add');
-//    Route::post('/add/events','AdminController@storeEvents')->name('admin.store.events');
-//
-
-//
-//    Route::post('/logout','Auth\AdminLoginController@logout');
-//
-
-//
-//    Route::get('/edit/event/{id}','AdminController@showEditEventsForm');
-//    Route::post('/edit/event/{id}','AdminController@EditEventsForm');
-//    Route::get('/delete/event/{id}','AdminController@deletetEvents');
-//
-
-//
-//    Route::get('/edit/honor/{id}','AdminController@showEditHonorForm');
-//    Route::post('/edit/honor/{id}','AdminController@EditHonorForm');
-//    Route::get('/delete/honor/{id}','AdminController@deletetHonor');
-//
-//    Route::get('/edit/administration/{id}','AdminController@showEditAdministrationForm');
-//    Route::post('/edit/administration/{id}','AdminController@EditAdministrationForm');
-//    Route::get('/delete/administration/{id}','AdminController@deletetAdministration');
-//
-//    Route::get('/student/detail/{id}','AdminController@showStudentDetail');
 
 });
 

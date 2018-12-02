@@ -15,16 +15,42 @@ use App\Student as Students;
 
 use Session;
 use Auth;
+use File;
+use Storage;
 
 class AdminController extends Controller
 {
+
+    protected function stringTinker($main_string,$position,$replacement){
+        $string_to_be_replaced = substr($main_string,$position);
+        $new_string = trim(preg_replace("/$string_to_be_replaced/",$replacement,$main_string));
+        return $new_string;
+    }
+
+    public function uploadFile(Request $request){
+        $file = $request->file_name;
+        $fileName = time().$file->getClientOriginalName();
+        $file->move(public_path('/uploads/files/'), $fileName);
+
+        $file = Storage::disk('public')->get('company.txt');
+        $info = explode(PHP_EOL, Storage::disk('public')->get('company.txt'));
+        foreach ($info as $item) {
+            if (preg_match("/file_name/", $item)) {
+                $replacement = $fileName;
+                $new_string = $this->stringTinker($item,10, $replacement);
+                $contents = str_replace($item, $new_string, $file);
+                Storage::disk('public')->put('company.txt', $contents);
+                return redirect()->back();
+            }
+        }
+    }
 
     public function ShowDashboard(){
         $news = News::with('broadcasts_image')->orderBy('id','DESC')->get();
         $events = Events::with('events_image')->orderBy('id','DESC')->get();
         $notice = Notices::orderBy('id','DESC')->get();
         $administration = Committee::orderBy('id','DESC')->get();
-        
+
         return view('admin.dashboard',['news' => $news, 'events'=>$events, 'notice'=>$notice, 'administration'=>$administration]);
     }
 

@@ -72,7 +72,7 @@
                         <div class="col-md-4 col-sm-4">
                             <div class="call-to-action-btn-details" style="text-align: center;">
                                 <p style="text-align: center;">
-                                    <a href="/download/5th_BCA_Conf.doc" style="margin-bottom: 10px;" class="button active about-readmore">View Details</a>
+                                    <a href="{{Route('download')}}" style="margin-bottom: 10px;" class="button active about-readmore">View Details</a>
                                 </p>
                             </div>
                         </div>
