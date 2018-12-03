@@ -64,11 +64,12 @@ Route::group(['prefix' => 'admin',  'middleware' => 'auth:admin'], function () {
     Route::get('/edit/notice/{id}','AdminController@showEditNoticeForm');
     Route::post('/edit/notice/{id}','AdminController@EditNoticeForm');
     Route::get('/delete/notice/{id}','AdminController@deletetNotice');
+    Route::post('/logout','Auth\AdminLoginController@logout');
 
 });
 
 
 
 
-Route::group(['middleware'=>'auth'],function (){
+Route::group(['middleware'=>'auth:admin'],function (){
 });
